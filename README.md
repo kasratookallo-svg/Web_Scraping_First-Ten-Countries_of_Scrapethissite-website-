@@ -1,43 +1,22 @@
-اطلاعات موردنیاز برای استخراج
+Information Required for Extraction
+For the first 20 countries found on the page, extract the following information:
 
-برای 20 کشور اول موجود در صفحه، اطلاعات زیر را استخراج کنید:
+# Country Name
+# Capital
+# Population - Must be converted to an integer.
+# Area - Must be converted to an integer (in square kilometers).
 
-1.    نام کشور (Country Name)
+Database Storage
+An SQLite database named countries.db created
+.
+Table Designing as country names with the following columns:
+# id (INTEGER, PRIMARY KEY, AUTOINCREMENT)
+# country_name (TEXT, NOT NULL)
+# capital (TEXT)
+# population (INTEGER)
+# area (INTEGER)
 
-2.    پایتخت (Capital)
+Display Results
+After saving, display the first 5 records from the database.
+Calculate and display the total population sum for the 20 extracted countries.
 
-3.    جمعیت (Population) - به عدد تبدیل شود
-
-4.    مساحت (Area) - به عدد تبدیل شود (کیلومتر مربع)
-
- 
-
-ذخیره‌سازی در پایگاه داده
-
-یک پایگاه داده SQLite با نام countries.db ایجاد کنید. (یا هر پایگاه داده دلخواه ولی با همین نام)
-جدولی با نام countries با ستون‌های زیر طراحی کنید:
-id (INTEGER, PRIMARY KEY, AUTOINCREMENT)
-country_name (TEXT, NOT NULL)
-capital (TEXT)
-population (INTEGER)
-area (INTEGER)
- 
-نمایش نتایج
-
-پس از ذخیره‌سازی، ۵ رکورد اول از پایگاه داده را نمایش دهید.
-جمع کل جمعیت 20 کشور استخراج شده را محاسبه و نمایش دهید.
- 
-
-خروجی مورد انتظار
-
-1.    کد کامل پایتون
-
-2.    فایل پایگاه داده countries.db
-
-3.    خروجی کنسول شامل:
-
-o      پیام موفقیت‌آمیز بودن استخراج
-
-o      نمایش ۵ کشور اول از دیتابیس
-
-o      جمع کل جمعیت 20 کشور
